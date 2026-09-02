@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roshan Nishad | Developer & Tech Innovator</title>
+  <meta name="description" content="Personal portfolio and blog of Roshan Nishad — Full Stack Developer aspirant, B.Tech CSE student at LPU, and creator of thexyzgroup.in.">
+
+  <!-- Google Fonts: Inter & Syne & Space Grotesk & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ==================== NAVIGATION BAR ==================== -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="brand-link" aria-label="Roshan Nishad Home">
+        <div class="nav-avatar-frame">
+          <img src="pfp img.png" alt="Roshan Nishad" class="nav-avatar" width="42" height="42">
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">Roshan Nishad</span>
+          <span class="brand-role">Software Engineer</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="nav-links-wrap" id="navLinksWrap" aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#intro" class="nav-link">About</a></li>
+          <li><a href="#journey" class="nav-link">Journey</a></li>
+          <li><a href="#goals" class="nav-link">Goals</a></li>
+          <li><a href="#current" class="nav-link">Current Focus</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#live-sites" class="nav-link">Live Sites</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Mobile Hamburger Button -->
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Menu" aria-expanded="false">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="4" y1="6" x2="20" y2="6"></line>
+          <line x1="4" y1="12" x2="20" y2="12"></line>
+          <line x1="11" y1="18" x2="20" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Scroll Progress Indicator -->
+  <div class="scroll-progress-bar" id="scrollProgress" aria-hidden="true"></div>
+
+  <!-- 360-Degree Rotating 3D Background Cube (CSS + HTML + JS) -->
+  <div class="cube-background-scene" id="cubeBackgroundScene" aria-hidden="true">
+    <div class="cube-3d" id="cube3D">
+      <div class="cube-face cube-face-front"></div>
+      <div class="cube-face cube-face-back"></div>
+      <div class="cube-face cube-face-right"></div>
+      <div class="cube-face cube-face-left"></div>
+      <div class="cube-face cube-face-top"></div>
+      <div class="cube-face cube-face-bottom"></div>
+    </div>
+  </div>
+
+  <main>
+    <!-- ==================== HERO SECTION & BANNER IMAGE ==================== -->
+    <section class="hero-section" id="hero">
+      <div class="hero-visual-container">
+        <div class="hero-visual-aspect">
+          <!-- Dynamic Top-Left Corner Greeting (No container, black text, typewriter letter-by-letter) -->
+          <div class="hero-corner-greeting" id="heroCornerGreeting" aria-live="polite">
+            <span class="typewriter-line typewriter-line1" id="typewriterLine1"></span>
+            <span class="typewriter-line typewriter-line2" id="typewriterLine2"></span>
+          </div>
+
+          <img src="pfp img.png" alt="Roshan Nishad Visual Showcase" class="hero-banner-image">
+          <div class="hero-visual-overlay"></div>
+          <div class="glass-shine-sweep" aria-hidden="true"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SECTION 1: INTRODUCTION & GREETINGS ==================== -->
+    <section class="section-wrapper intro-section" id="intro">
+      <div class="container">
+        <div class="intro-card reveal">
+          <div class="intro-greeting-lead">
+            <div class="intro-typewriter-wrap" id="introTypewriterWrap" aria-live="polite">
+              <span class="intro-typewriter-text" id="introTypewriterText"></span>
+            </div>
+          </div>
+
+          <h1 class="intro-headline">
+            I am <span class="highlight">Roshan Nishad</span>.<br>
+            Crafting Scalable Web Experiences.
+          </h1>
+
+          <p class="intro-bio">
+            Coming from a humble rural area of <strong>Gorakhpur, Uttar Pradesh</strong>, my curiosity for computing transformed into an obsession for creating meaningful, high-performance digital products. I believe that technology is the ultimate equalizer — and through persistence, clean architecture, and relentless learning, I design and engineer software that solves real problems.
+          </p>
+
+          <div class="intro-highlights-grid">
+            <div class="highlight-stat-card">
+              <div class="stat-label">Origin & Roots</div>
+              <div class="stat-value">Gorakhpur (U.P.)</div>
+            </div>
+            <div class="highlight-stat-card">
+              <div class="stat-label">Current Academic Pursuit</div>
+              <div class="stat-value">B.Tech CSE @ LPU</div>
+            </div>
+            <div class="highlight-stat-card">
+              <div class="stat-label">Primary Specialization</div>
+              <div class="stat-value">Full Stack Web Dev</div>
+            </div>
+            <div class="highlight-stat-card">
+              <div class="stat-label">Initiatives Built</div>
+              <div class="stat-value">The XYZ Group</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SECTION 2: LIFE JOURNEY SUMMARY & SCHOOLING ==================== -->
+    <section class="section-wrapper" id="journey">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Roots & Formation</span>
+          <h2 class="section-title">Life Journey & Education</h2>
+          <p class="section-subtitle">A fourteen-year foundation of discipline, academic rigor, and early fascination with programming.</p>
+        </div>
+
+        <div class="journey-grid">
+          <!-- Schooling Card -->
+          <div class="journey-card reveal">
+            <div>
+              <span class="journey-period">14 Years Continuous (Nursery to 10+2)</span>
+              <h3 class="journey-institution">Naval's National Academy</h3>
+              <div class="journey-location">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                <span>Kusmhi, Gorakhpur, Uttar Pradesh</span>
+              </div>
+              <p class="journey-body">
+                Naval's National Academy served as the crucible for my personal and intellectual development. Over 14 uninterrupted years from nursery through senior secondary education, I developed strong leadership qualities, disciplined study habits, and the confidence to take initiative.
+              </p>
+              <p class="journey-body">
+                It was here that I first encountered computer science, building early foundations in <strong>Python, JavaScript, HTML, and CSS</strong>. This continuous environment fostered my analytical mindset and ignited my love for technology.
+              </p>
+            </div>
+            <div class="skills-pill-group">
+              <span class="skill-pill">Leadership Qualities</span>
+              <span class="skill-pill">Analytical Thinking</span>
+              <span class="skill-pill">Python</span>
+              <span class="skill-pill">JavaScript</span>
+              <span class="skill-pill">HTML5 & CSS3</span>
+            </div>
+          </div>
+
+          <!-- Personal Growth Card -->
+          <div class="journey-card reveal">
+            <div>
+              <span class="journey-period">Character & Perspective</span>
+              <h3 class="journey-institution">The Journey Beyond</h3>
+              <div class="journey-location">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                </svg>
+                <span>Curiosity, Grit & Self-Learning</span>
+              </div>
+              <p class="journey-body">
+                Growing up in a rural area instilled in me an appreciation for resourcefulness and self-reliance. Without instant access to tech ecosystems, I learned to leverage every online resource, documentation page, and open-source project to expand my coding abilities.
+              </p>
+              <p class="journey-body">
+                This foundation shaped my core identity: a builder who isn't afraid of complex problems, dedicated to turning abstract logic into practical, functioning software systems that serve communities and businesses.
+              </p>
+            </div>
+            <div class="skills-pill-group">
+              <span class="skill-pill">Resourcefulness</span>
+              <span class="skill-pill">Independent Learning</span>
+              <span class="skill-pill">Problem Solving</span>
+              <span class="skill-pill">System Building</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SECTION 3: FUTURE GOALS & AMBITIONS ==================== -->
+    <section class="section-wrapper" id="goals">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Vision & Roadmap</span>
+          <h2 class="section-title">Future Goals & Ambitions</h2>
+          <p class="section-subtitle">Dedicated to mastering full-stack software engineering and developing high-throughput web architectures.</p>
+        </div>
+
+        <div class="goals-container reveal">
+          <div class="goals-content">
+            <h3>Becoming a Versatile Full Stack Developer</h3>
+            <p>
+              My primary ambition is to become a world-class <strong>Full Stack Developer</strong> capable of architecting scalable distributed backends, robust database models, and seamless, ultra-responsive frontend interfaces.
+            </p>
+            <ul class="goals-list">
+              <li class="goal-item">
+                <div class="goal-icon-box">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="16 18 22 12 16 6"></polyline>
+                    <polyline points="8 6 2 12 8 18"></polyline>
+                  </svg>
+                </div>
+                <div>
+                  <div class="goal-text-title">Multi-Language Proficiency</div>
+                  <div class="goal-text-desc">Actively broadening technical breadth across multiple modern languages and paradigms (Python, JavaScript/TypeScript, Go, and C++).</div>
+                </div>
+              </li>
+              <li class="goal-item">
+                <div class="goal-icon-box">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                    <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                    <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                    <line x1="6" y1="18" x2="6.01" y2="18"></line>
+                  </svg>
+                </div>
+                <div>
+                  <div class="goal-text-title">Production Systems & Scalability</div>
+                  <div class="goal-text-desc">Designing decoupled microservices, database caching pipelines, automated DevOps, and rock-solid APIs that handle heavy traffic.</div>
+                </div>
+              </li>
+              <li class="goal-item">
+                <div class="goal-icon-box">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                  </svg>
+                </div>
+                <div>
+                  <div class="goal-text-title">SaaS & Utility Development</div>
+                  <div class="goal-text-desc">Building commercial-grade web utilities (such as automated billing suites, rent ledgers, and AI agents) that streamline workflows.</div>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="goals-tech-card">
+            <h4 class="goals-tech-title">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M12 6v6l4 2"></path>
+              </svg>
+              <span>Target Technical Stack</span>
+            </h4>
+            
+            <div class="tech-stack-showcase">
+              <div>
+                <span class="tech-category-name">Frontend Architecture</span>
+                <div class="tech-badge-wrap" style="margin-top: 0.35rem;">
+                  <span class="skill-pill">React</span>
+                  <span class="skill-pill">Next.js</span>
+                  <span class="skill-pill">TypeScript</span>
+                  <span class="skill-pill">Tailwind CSS</span>
+                </div>
+              </div>
+
+              <div>
+                <span class="tech-category-name">Backend & API Services</span>
+                <div class="tech-badge-wrap" style="margin-top: 0.35rem;">
+                  <span class="skill-pill">Node.js</span>
+                  <span class="skill-pill">Express</span>
+                  <span class="skill-pill">Python / FastAPI</span>
+                  <span class="skill-pill">REST & GraphQL</span>
+                </div>
+              </div>
+
+              <div>
+                <span class="tech-category-name">Databases & Infrastructure</span>
+                <div class="tech-badge-wrap" style="margin-top: 0.35rem;">
+                  <span class="skill-pill">PostgreSQL</span>
+                  <span class="skill-pill">MongoDB</span>
+                  <span class="skill-pill">Docker</span>
+                  <span class="skill-pill">Git & CI/CD</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SECTION 4: WHAT I AM CURRENTLY DOING ==================== -->
+    <section class="section-wrapper" id="current">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Current Pursuits</span>
+          <h2 class="section-title">What I Am Doing Right Now</h2>
+          <p class="section-subtitle">Balancing formal computer science engineering with intensive software engineering practice.</p>
+        </div>
+
+        <div class="current-status-box reveal">
+          <div class="current-info-block">
+            <div class="current-badge">
+              <span class="pulse-dot"></span>
+              <span>Currently In Session</span>
+            </div>
+            <div>
+              <h3 class="university-name">Lovely Professional University (LPU)</h3>
+              <p class="degree-name">B.Tech in Computer Science & Engineering (CSE)</p>
+              <p style="color: var(--text-muted); font-size: 0.95rem; margin-top: 0.35rem;">Phagwara, Punjab, India</p>
+            </div>
+            <p style="line-height: 1.75; color: var(--text-secondary);">
+              Actively completing rigorous academic coursework in data structures, algorithms, operating systems, and computer networks while building independent applications on nights and weekends.
+            </p>
+          </div>
+
+          <div class="current-activities">
+            <div class="activity-card">
+              <div class="activity-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="4 17 10 11 4 5"></polyline>
+                  <line x1="12" y1="19" x2="20" y2="19"></line>
+                </svg>
+              </div>
+              <div>
+                <strong style="color: var(--text-primary); display: block; font-size: 1rem;">Core Skill Elevation</strong>
+                <p style="font-size: 0.88rem; color: var(--text-muted); margin-top: 0.2rem;">Refining problem-solving speed in Python & JavaScript, mastering modern asynchronous programming patterns.</p>
+              </div>
+            </div>
+
+            <div class="activity-card">
+              <div class="activity-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+                </svg>
+              </div>
+              <div>
+                <strong style="color: var(--text-primary); display: block; font-size: 1rem;">Deploying Full-Stack Projects</strong>
+                <p style="font-size: 0.88rem; color: var(--text-muted); margin-top: 0.2rem;">Engineering active production solutions under <strong>thexyzgroup.in</strong>, including automated chat interfaces and accounting tools.</p>
+              </div>
+            </div>
+
+            <div class="activity-card">
+              <div class="activity-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                </svg>
+              </div>
+              <div>
+                <strong style="color: var(--text-primary); display: block; font-size: 1rem;">Open Source & GitHub Consistency</strong>
+                <p style="font-size: 0.88rem; color: var(--text-muted); margin-top: 0.2rem;">Committing updates regularly to <a href="https://github.com/roshan-2026" target="_blank" rel="noopener" style="text-decoration: underline;">roshan-2026</a> and collaborating on developer repositories.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SECTION 5: FEATURED WORK & GITHUB PROJECTS ==================== -->
+    <section class="section-wrapper" id="projects">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Featured Portfolio</span>
+          <h2 class="section-title">Work Done So Far</h2>
+          <p class="section-subtitle">Real codebases and systems fetched from my GitHub account (<a href="https://github.com/roshan-2026" target="_blank" rel="noopener" style="color: #fff; text-decoration: underline;">roshan-2026</a>), plus upcoming roadmap products.</p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1: AI Chatbot (xyz-chat) -->
+          <article class="project-card featured-card reveal">
+            <div>
+              <div class="project-top">
+                <span class="project-type-tag">Flagship Project</span>
+                <div class="project-links">
+                  <a href="https://github.com/roshan-2026/xyz-chat" target="_blank" rel="noopener" class="project-icon-link" aria-label="xyz-chat GitHub Repository" title="GitHub Repo">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                    </svg>
+                  </a>
+                  <a href="https://thexyzgroup.in/chatbot-ai" target="_blank" rel="noopener" class="project-icon-link" aria-label="Launch AI Chatbot Live" title="Live Site">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                      <polyline points="15 3 21 3 21 9"></polyline>
+                      <line x1="10" y1="14" x2="21" y2="3"></line>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <h3 class="project-title">AI Chatbot (xyz-chat)</h3>
+              <p class="project-desc">
+                An intelligent conversational chatbot built with interactive message streaming, responsive dark UI, and natural language model integration. Deployed in live production under the XYZ ecosystem.
+              </p>
+            </div>
+            <div>
+              <div class="project-tags">
+                <span class="project-tag">AI Integration</span>
+                <span class="project-tag">JavaScript</span>
+                <span class="project-tag">WebSockets / API</span>
+                <span class="project-tag">Live Deployed</span>
+              </div>
+              <a href="https://github.com/roshan-2026/xyz-chat" target="_blank" rel="noopener" class="project-action-btn">
+                <span>View on GitHub</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 2: Rent Ledger Web -->
+          <article class="project-card featured-card reveal">
+            <div>
+              <div class="project-top">
+                <span class="project-type-tag">Financial Utility</span>
+                <div class="project-links">
+                  <a href="https://github.com/roshan-2026/Rent_Ledger" target="_blank" rel="noopener" class="project-icon-link" aria-label="Rent_Ledger GitHub Repository" title="GitHub Repo">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                    </svg>
+                  </a>
+                  <a href="https://rent-manager.thexyzgroup.in" target="_blank" rel="noopener" class="project-icon-link" aria-label="Launch Rent Ledger Live" title="Live Site">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                      <polyline points="15 3 21 3 21 9"></polyline>
+                      <line x1="10" y1="14" x2="21" y2="3"></line>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <h3 class="project-title">Rent Ledger Web</h3>
+              <p class="project-desc">
+                Full-featured property rent ledger and tenant management application. Allows property owners to track payment records, outstanding balances, generate rent statements, and prevent payment discrepancies.
+              </p>
+            </div>
+            <div>
+              <div class="project-tags">
+                <span class="project-tag">Full-Stack</span>
+                <span class="project-tag">Ledger Accounting</span>
+                <span class="project-tag">Database</span>
+                <span class="project-tag">Live Deployed</span>
+              </div>
+              <a href="https://github.com/roshan-2026/Rent_Ledger" target="_blank" rel="noopener" class="project-action-btn">
+                <span>View on GitHub</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 3: The XYZ Group Web Platform -->
+          <article class="project-card reveal">
+            <div>
+              <div class="project-top">
+                <span class="project-type-tag">Corporate Portal</span>
+                <div class="project-links">
+                  <a href="https://github.com/roshan-2026/thexyzgroup" target="_blank" rel="noopener" class="project-icon-link" aria-label="The XYZ Group GitHub Repository" title="GitHub Repo">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                    </svg>
+                  </a>
+                  <a href="https://thexyzgroup.in" target="_blank" rel="noopener" class="project-icon-link" aria-label="Launch The XYZ Group Live" title="Live Site">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                      <polyline points="15 3 21 3 21 9"></polyline>
+                      <line x1="10" y1="14" x2="21" y2="3"></line>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <h3 class="project-title">The XYZ Group Web Platform</h3>
+              <p class="project-desc">
+                Central operational web presence for The XYZ Group organization, incorporating brand positioning, sub-domain service gateways, responsive layouts, and modern design standards.
+              </p>
+            </div>
+            <div>
+              <div class="project-tags">
+                <span class="project-tag">HTML5 / CSS3</span>
+                <span class="project-tag">Domain Routing</span>
+                <span class="project-tag">Production</span>
+              </div>
+              <a href="https://github.com/roshan-2026/thexyzgroup" target="_blank" rel="noopener" class="project-action-btn">
+                <span>View on GitHub</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 4: Backend Engine -->
+          <article class="project-card reveal">
+            <div>
+              <div class="project-top">
+                <span class="project-type-tag">API & Core Engine</span>
+                <div class="project-links">
+                  <a href="https://github.com/roshan-2026/backend" target="_blank" rel="noopener" class="project-icon-link" aria-label="Backend Services GitHub Repository" title="GitHub Repo">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <h3 class="project-title">Backend Architecture Services</h3>
+              <p class="project-desc">
+                Backend services providing user authentication, secure endpoint validation, database schema management, and request routing across deployed micro-apps.
+              </p>
+            </div>
+            <div>
+              <div class="project-tags">
+                <span class="project-tag">Backend</span>
+                <span class="project-tag">REST APIs</span>
+                <span class="project-tag">Auth & DB</span>
+              </div>
+              <a href="https://github.com/roshan-2026/backend" target="_blank" rel="noopener" class="project-action-btn">
+                <span>View on GitHub</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 5: Bill Maker (Future Project) -->
+          <article class="project-card reveal">
+            <div>
+              <div class="project-top">
+                <span class="future-badge">Upcoming / Roadmap</span>
+                <div class="project-links">
+                  <span class="project-icon-link" title="Coming Soon">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <polyline points="12 6 12 12 14 14"></polyline>
+                    </svg>
+                  </span>
+                </div>
+              </div>
+              <h3 class="project-title">Bill Maker (Invoice Suite)</h3>
+              <p class="project-desc">
+                An automated digital invoice generator and billing tool designed for freelancers, shops, and small businesses. Features instant PDF receipt compilation, itemized tax computations, and customer history.
+              </p>
+            </div>
+            <div>
+              <div class="project-tags">
+                <span class="project-tag">In Active R&D</span>
+                <span class="project-tag">PDF Generation</span>
+                <span class="project-tag">Tax Calculations</span>
+              </div>
+              <a href="#contact" class="project-action-btn">
+                <span>Inquire / Early Access</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 6: Interactive Resume / Portfolio -->
+          <article class="project-card reveal">
+            <div>
+              <div class="project-top">
+                <span class="project-type-tag">Curriculum Vitae</span>
+                <div class="project-links">
+                  <a href="https://github.com/roshan-2026/Resume" target="_blank" rel="noopener" class="project-icon-link" aria-label="Resume GitHub Repository" title="GitHub Repo">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <h3 class="project-title">Technical Resume Repository</h3>
+              <p class="project-desc">
+                Source files and documentation tracking technical milestones, skill certifications, academic achievements, and evolving project implementations.
+              </p>
+            </div>
+            <div>
+              <div class="project-tags">
+                <span class="project-tag">Markdown</span>
+                <span class="project-tag">Documentation</span>
+                <span class="project-tag">Profile</span>
+              </div>
+              <a href="https://github.com/roshan-2026/Resume" target="_blank" rel="noopener" class="project-action-btn">
+                <span>View on GitHub</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SECTION 6: LIVE SITES DEPLOYED & RUNNING ==================== -->
+    <section class="section-wrapper" id="live-sites">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Production Systems</span>
+          <h2 class="section-title">Live Sites & Deployments</h2>
+          <p class="section-subtitle">Real web applications actively hosted, running, and accessible to worldwide users right now.</p>
+        </div>
+
+        <div class="live-sites-grid">
+          <!-- Live Site 1 -->
+          <div class="live-site-card reveal">
+            <div>
+              <div class="live-site-status">
+                <span class="status-indicator">
+                  <span class="indicator-dot"></span>
+                  <span>ONLINE & SERVING</span>
+                </span>
+                <span style="font-size: 0.75rem; color: var(--text-dim); font-family: var(--font-mono);">HTTPS / SSL</span>
+              </div>
+              <h3 class="live-site-domain">thexyzgroup.in</h3>
+              <p class="live-site-desc">
+                The primary organizational portal for The XYZ Group. Acts as the umbrella gateway to client services, projects, and custom web products.
+              </p>
+            </div>
+            <a href="https://thexyzgroup.in" target="_blank" rel="noopener" class="live-launch-btn">
+              <span>Open Portal</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Live Site 2 -->
+          <div class="live-site-card reveal">
+            <div>
+              <div class="live-site-status">
+                <span class="status-indicator">
+                  <span class="indicator-dot"></span>
+                  <span>ONLINE & SERVING</span>
+                </span>
+                <span style="font-size: 0.75rem; color: var(--text-dim); font-family: var(--font-mono);">AI ENGINE</span>
+              </div>
+              <h3 class="live-site-domain">thexyzgroup.in/chatbot-ai</h3>
+              <p class="live-site-desc">
+                Interactive live AI chatbot deployment. Provides continuous natural language processing, intelligent assistant responses, and a clean interface.
+              </p>
+            </div>
+            <a href="https://thexyzgroup.in/chatbot-ai" target="_blank" rel="noopener" class="live-launch-btn">
+              <span>Launch AI Chat</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Live Site 3 -->
+          <div class="live-site-card reveal">
+            <div>
+              <div class="live-site-status">
+                <span class="status-indicator">
+                  <span class="indicator-dot"></span>
+                  <span>ONLINE & SERVING</span>
+                </span>
+                <span style="font-size: 0.75rem; color: var(--text-dim); font-family: var(--font-mono);">SAAS UTILITY</span>
+              </div>
+              <h3 class="live-site-domain">rent-manager.thexyzgroup.in</h3>
+              <p class="live-site-desc">
+                Live deployed property and rent management platform for automated tenant record administration, collection tracking, and ledger generation.
+              </p>
+            </div>
+            <a href="https://rent-manager.thexyzgroup.in" target="_blank" rel="noopener" class="live-launch-btn">
+              <span>Launch Rent Manager</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SECTION 7: SOCIAL CHANNELS ==================== -->
+    <section class="section-wrapper" id="socials">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Networks</span>
+          <h2 class="section-title">Connect on Socials</h2>
+          <p class="section-subtitle">Stay in touch across platforms for software development insights, updates, and discussions.</p>
+        </div>
+
+        <div class="socials-grid">
+          <!-- GitHub -->
+          <a href="https://github.com/roshan-2026" target="_blank" rel="noopener" class="social-card reveal">
+            <div class="social-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+              </svg>
+            </div>
+            <div>
+              <div class="social-name">GitHub</div>
+              <div class="social-handle">@roshan-2026</div>
+            </div>
+          </a>
+
+          <!-- LinkedIn -->
+          <a href="https://www.linkedin.com/in/roshan-nishad-cse-btech" target="_blank" rel="noopener" class="social-card reveal">
+            <div class="social-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </div>
+            <div>
+              <div class="social-name">LinkedIn</div>
+              <div class="social-handle">in/roshan-nishad-cse-btech</div>
+            </div>
+          </a>
+
+          <!-- Instagram -->
+          <a href="https://www.instagram.com/i.am_r.k_" target="_blank" rel="noopener" class="social-card reveal">
+            <div class="social-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </div>
+            <div>
+              <div class="social-name">Instagram</div>
+              <div class="social-handle">@i.am_r.k_</div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SECTION 8: CONTACT DETAILS & MESSAGE ==================== -->
+    <section class="section-wrapper" id="contact">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Direct Communication</span>
+          <h2 class="section-title">Get In Touch</h2>
+          <p class="section-subtitle">Have a question, collaboration idea, or project proposal? Reach out directly through any channel.</p>
+        </div>
+
+        <div class="contact-container reveal">
+          <!-- Channels -->
+          <div>
+            <h3 style="font-size: 1.6rem; margin-bottom: 0.5rem;">Let's Build Together</h3>
+            <p style="color: var(--text-muted); font-size: 0.95rem;">
+              Feel free to call, email, or send a direct message on Instagram. I am always open to exploring innovative software ventures.
+            </p>
+
+            <div class="contact-info-list">
+              <!-- Email -->
+              <div class="contact-channel">
+                <div class="contact-icon-wrapper">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <div>
+                  <div class="contact-channel-title">Official Email</div>
+                  <a href="mailto:roshan.nishad@thexyzgroup.in" class="contact-channel-value">roshan.nishad@thexyzgroup.in</a>
+                  <br>
+                  <button class="copy-btn copy-email-btn" data-email="roshan.nishad@thexyzgroup.in" aria-label="Copy Email Address">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                      <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                    </svg>
+                    <span>Copy Email</span>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Phone / Contact Number -->
+              <div class="contact-channel">
+                <div class="contact-icon-wrapper">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                  </svg>
+                </div>
+                <div>
+                  <div class="contact-channel-title">Phone & WhatsApp</div>
+                  <a href="tel:+918081825780" class="contact-channel-value">+91 8081825780</a>
+                </div>
+              </div>
+
+              <!-- Instagram DM -->
+              <div class="contact-channel">
+                <div class="contact-icon-wrapper">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                  </svg>
+                </div>
+                <div>
+                  <div class="contact-channel-title">Instagram Direct Message</div>
+                  <a href="https://www.instagram.com/i.am_r.k_" target="_blank" rel="noopener" class="contact-channel-value">@i.am_r.k_</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Message Form -->
+          <div>
+            <form class="contact-form" id="contactForm">
+              <div class="form-group">
+                <label for="senderName" class="form-label">Your Name</label>
+                <input type="text" id="senderName" class="form-input" placeholder="e.g. Alex Johnson" required>
+              </div>
+
+              <div class="form-group">
+                <label for="senderEmail" class="form-label">Your Email Address</label>
+                <input type="email" id="senderEmail" class="form-input" placeholder="alex@example.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="senderMessage" class="form-label">Message / Inquiry</label>
+                <textarea id="senderMessage" class="form-textarea" placeholder="Hello Roshan, I'd like to discuss..." required></textarea>
+              </div>
+
+              <button type="submit" class="submit-btn">
+                <span>Send Message</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Toast Notification Feedback -->
+  <div class="toast-notice" id="toastNotice" role="status" aria-live="polite">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+      <path d="M20 6L9 17l-5-5"></path>
+    </svg>
+    <span id="toastMessage">Action completed</span>
+  </div>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div style="display: flex; align-items: center; gap: 0.75rem;">
+          <img src="pfp img.png" alt="Roshan Nishad" style="width: 32px; height: 32px; border-radius: 50%; object-fit: cover; border: 1px solid rgba(255,255,255,0.2);">
+          <span style="font-family: var(--font-display); font-weight: 700; color: #ffffff;">Roshan Nishad</span>
+        </div>
+
+        <ul class="footer-nav">
+          <li><a href="#intro">About</a></li>
+          <li><a href="#journey">Journey</a></li>
+          <li><a href="#goals">Goals</a></li>
+          <li><a href="#current">Education</a></li>
+          <li><a href="#projects">Work</a></li>
+          <li><a href="#live-sites">Deployments</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Roshan Nishad. All rights reserved.</div>
+        <div>Crafted with high-contrast monochrome elegance.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
